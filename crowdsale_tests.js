@@ -16,7 +16,7 @@ const Token = compilers.createContract(tokenFile,'TokenERC20');
 const Crowdsale = compilers.createContract(crowdsaleFile, 'Crowdsale');
 
 // Token 18 decimal places
-const DECIMALS = '1000000000000000000';
+const DECIMALS = '1e18';
 
 // other useful things
 const getBalance = (acct) => web3.fromWei(web3.eth.getBalance(acct), 'ether').toNumber();
